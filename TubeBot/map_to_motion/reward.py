@@ -34,9 +34,9 @@ class reward():
         r2 = (max_affordance - p_estimate) / (max_affordance + 0.0000001)
         
         # MSE
-        r = math.sqrt(r1**2+r2**2)
+        r = r1**2+r2**2
 
-        print(f"MSE loss: {r1} + {r2} = {r})")
+        print(f"loss: {r1} + {r2} = {r})")
         print()
         
         return r

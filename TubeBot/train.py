@@ -163,7 +163,7 @@ def train():
 
         # after runtime, save model and exit
         if time.time() - start > runtime:
-            torch.save(policy.state_dict(), 'model_hiera_36h.pth')
+            # torch.save(policy.state_dict(), 'model_hiera_36h.pth')
             np.savetxt("losses.csv", losses, delimiter=",", fmt="%f")
             display_loss(losses)
             break
